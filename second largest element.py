@@ -1,0 +1,9 @@
+arr = [1,2,3,4,5,6,7,8,9]
+largest = second_largest =  -1
+for num in arr:
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif num > second_largest and num != largest:
+        second_largest = num
+    print(second_largest)
